@@ -1,0 +1,27 @@
+---
+name: View
+menu: Atoms
+route: /component-view 
+---
+import { Playground, PropsTable } from 'docz';
+import { View, Text } from '..';
+
+# View
+O **View** serve como um container genérico para qualquer tipo de conteúdo.
+
+## Default
+<View tag="section">
+  <Text>Exemplo de View Component</Text>
+</View>
+
+## Semântica
+Atualmente este componente oferece as tags `section`, `article`, `form`, `address`, `time`, `aside` e `div`.
+> Lembre-se sempre de analizar o componente que pretende implementar e passar a prop `tag` condizente com o contexto onde ele será inserido. Esta prática é importante pois ajuda a prezar pela semântica da página.
+
+## Playground
+<Playground>
+  <View tag="section">Exemplo de View</View>
+</Playground>
+
+## Tabela de Props
+<PropsTable of={View} />
