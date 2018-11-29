@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { withTheme } from 'styled-components';
 import { TouchableNativeFeedback, TouchableOpacity, View } from 'react-native';
-import { debounce, color, bindAll } from '../../helpers';
+import { debounce, bindAll } from '../../helpers';
+import { color } from '../../assets/styles';
 
 const canUseRipple = TouchableNativeFeedback.canUseNativeForeground();
 

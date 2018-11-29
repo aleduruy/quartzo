@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
-import { platform, color } from '../../helpers';
+import { platform } from '../../helpers';
+import { color } from '../../assets/styles';
 
 export default css`
   text-decoration: none;

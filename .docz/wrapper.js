@@ -5,6 +5,6 @@ export default class Wrapper extends Component {
   render() {
     const { children, ...props } = this.props;
 
-    return <ThemeProvider theme={{brand: 'suba'}} {...props}>{children}</ThemeProvider>;
+    return <ThemeProvider theme={{name: 'light'}} {...props}>{children}</ThemeProvider>;
   }
 }

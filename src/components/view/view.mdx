@@ -7,21 +7,20 @@ import { Playground, PropsTable } from 'docz';
 import { View, Text } from '..';
 
 # View
-O **View** serve como um container genérico para qualquer tipo de conteúdo.
+The **View** components is a generic wrapper that can receive any kind of children. On the web environment it can render a couple of different HTML tags, wich will keep the page semantics.
 
-## Default
-<View tag="section">
-  <Text>Exemplo de View Component</Text>
-</View>
+### Semantics
+Possible tags to be used:
+- `section`
+- `article`
+- `form`
+- `aside`
+- `div`
 
-## Semântica
-Atualmente este componente oferece as tags `section`, `article`, `form`, `address`, `time`, `aside` e `div`.
-> Lembre-se sempre de analizar o componente que pretende implementar e passar a prop `tag` condizente com o contexto onde ele será inserido. Esta prática é importante pois ajuda a prezar pela semântica da página.
-
-## Playground
+### Playground
 <Playground>
-  <View tag="section">Exemplo de View</View>
+  <View tag="section">Hello! I'm wrapped in a View.</View>
 </Playground>
 
-## Tabela de Props
+### Tabela de Props
 <PropsTable of={View} />

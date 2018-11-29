@@ -14,14 +14,12 @@ export class View extends Component {
         return <ViewForm {...props}>{children}</ViewForm>;
       case 'section':
         return <ViewSection {...props}>{children}</ViewSection>;
-      case 'time':
-        return <ViewTime {...props}>{children}</ViewTime>;
-      case 'address':
-        return <ViewAddress {...props}>{children}</ViewAddress>;
       case 'aside':
         return <ViewAside {...props}>{children}</ViewAside>;
+      case 'div':
+        return <ViewDiv {...props}>{children}</ViewDiv>;
       default:
-        return <ViewUI {...props}>{children}</ViewUI>;
+        return <ViewComponent {...props}>{children}</ViewComponent>;
     }
   }
   render() {
@@ -32,18 +30,18 @@ export class View extends Component {
 const ViewArticle = styled.article`${style}`;
 const ViewForm = styled.form`${style}`;
 const ViewSection = styled.section`${style}`;
-const ViewTime = styled.time`${style}`;
-const ViewAddress = styled.address`${style}`;
 const ViewAside = styled.aside`${style}`;
-const ViewUI = styled.div`${style}`;
+const ViewDiv = styled.div`${style}`;
+const ViewComponent = styled.span`${style}`;
 
 View.defaultProps = {
-  tag: 'div',
+  tag: 'span',
+  children: null,
 };
 
 View.propTypes = {
-  /** Define o conteúdo do View. */
+  /** The content og the View. */
   children: PropTypes.any,
-  /** Define a tag do View. */
-  tag: PropTypes.oneOf(['div', 'article', 'form', 'section', 'time', 'address', 'aside']),
+  /** The tag of the View on the web. */
+  tag: PropTypes.oneOf(['div', 'article', 'form', 'section', 'aside', 'span']),
 };

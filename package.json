@@ -26,7 +26,7 @@
     "jest": "jest --coverage=${COVERAGE:=false}",
     "test:watch": "jest --watch --verbose",
     "lint": "eslint src",
-    "docz:dev": "docz dev",
+    "docz": "docz dev",
     "optimize:svg": "svgo -f ./src/assets/${BRAND:=suba}/svg/icons"
   },
   "peerDependencies": {
@@ -95,6 +95,7 @@
   },
   "dependencies": {
     "docz-theme-default": "^0.12.13",
+    "serve-static": "^1.13.2",
     "styled-theming": "2.2.0",
     "styled-tools": "0.4.0"
   }

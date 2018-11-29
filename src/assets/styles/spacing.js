@@ -1,5 +1,4 @@
-import { medias } from './match-media';
-import { platform } from './platform';
+import { medias, platform } from '../../helpers';
 import { css } from 'styled-components';
 import themeUI from 'styled-theming';
 

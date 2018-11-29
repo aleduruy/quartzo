@@ -4,18 +4,49 @@ menu: Atoms
 route: /component-text
 ---
 import { Playground, PropsTable } from 'docz';
-import { TextStyled, Text } from '..';
+import { TextStyled, Text, View } from '..';
 
 # Text
-O componente **Text** deve ser usado para renderizar Textos no geral.
+The **Text** component must be used to wrap any existing Text on the Layout. On the web environment it can render a couple of different HTML tags, wich will keep the page semantics.
 
-## Example
-<Text>Este é um Texto com a cor e tamanho padrão.</Text>
+### Examples
+<View>
+  <Text>Hello! I'm a default Text example.</Text>
+</View>
 
-## Playground
+<View>
+  <Text weight={300}>I'm a Text with weight 300.</Text>
+</View>
+<View>
+  <Text weight={400}>I'm a Text with weight 400.</Text>
+</View>
+<View>
+  <Text weight={700}>I'm a Text with weight 700.</Text>
+</View>
+<View>
+  <Text weight={900}>I'm a Text with weight 900.</Text>
+</View>
+
+<View>
+  <Text italic={true}>I'm a Text with italic style.</Text>
+</View>
+
+<View>
+  <Text underline={true}>I'm a Text with underline style.</Text>
+</View>
+
+### Semantics
+Possible tags to be used:
+- `label`
+- `strong`
+- `address`
+- `time`
+- `span`
+
+### Playground
 <Playground>
-  <Text strong={true} color="primary" size="lg">Exemplo de Text</Text>
+  <Text weigth={400}>Text Example</Text>
 </Playground>
 
-## Props Table
+### Props Table
 <PropsTable of={TextStyled} />

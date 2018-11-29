@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { ThemeProvider as SCThemeProvider, injectGlobal } from 'styled-components';
+import { ThemeProvider as ThemeProviderComponent, injectGlobal } from 'styled-components';
 import { View } from '../view';
-import { color } from '../../helpers';
 
 export class ThemeProvider extends Component {
   renderReset() {
     return injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Lato:300,700|Pacifico');
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Pacifico');
     * {
       box-sizing: border-box;
     }
@@ -17,24 +16,15 @@ export class ThemeProvider extends Component {
   }
 
   render() {
-    const { children } = this.props;
-    const { brand } = this.props.theme;
-
-    const theme = {
-      ...this.props.theme,
-      colors: {
-        primary: color.primary[brand],
-        secondary: color.secondary[brand],
-      },
-    };
+    const { children, theme } = this.props;
 
     return (
-      <SCThemeProvider theme={theme}>
+      <ThemeProviderComponent theme={theme}>
         <View>
           {this.renderReset()}
           {children}
         </View>
-      </SCThemeProvider>
+      </ThemeProviderComponent>
     );
   }
 }
