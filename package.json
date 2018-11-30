@@ -12,7 +12,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "dev:web": "webpack-dev-server",
-    "dev:native": "brand=${BRAND:=suba} run-p svg:native && react-native start",
+    "dev:native": "react-native start",
     "build:webpack": "webpack",
     "build:docz": "docz build",
     "svg:component": "mkdir -p ./src/assets/${BRAND:=suba}/svg/components && svgr --native ./src/assets/${BRAND:=suba}/svg/icons --out-dir ./src/assets/${BRAND:=suba}/svg/components --template ./template-svg.js --filename-case kebab",
