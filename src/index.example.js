@@ -1,36 +1,13 @@
 import React from 'react';
-import { Col, Text, Title, Grid } from '..';
+import { Text } from '..';
 
 export default () => {
   return (
-    <Grid background={true} spacing="sm">
-      <Col spacingBottom="sm">
-        <Title>Sobre o Cross Theme.next</Title>
-        <Text>
-          Cross Theme.next é um framework responsivo e cross-plataforma que oferece os componentes utilizados pelos sites da Americanas, Submarino e Shoptime. Seu principal objetivo é fornecer um código unificado tanto para native quanto para web, prezando sempre pela performace e padronização visual de cada marca.
-        </Text>
-      </Col>
-      <Col spacingBottom="sm"><Text>Estes são alguns de seus princípios:</Text></Col>
-      <Col spacingBottom="sm">
-        <Text strong={true}>Reutilização:</Text>
-        <Text>Permite que o mesmo componente seja reutilizado tanto em Web quanto Native.</Text>
-      </Col>
-      <Col spacingBottom="sm">
-        <Text strong={true}>Performance:</Text>
-        <Text>Oferece componentes leves e performáticos, com opção de lazy load.</Text>
-      </Col>
-      <Col spacingBottom="sm">
-        <Text strong={true}>Padronizacão:</Text>
-        <Text>Garante o padrão visual das marcas, pois possui componentes de acordo com seus StyleGuides.</Text>
-      </Col>
-      <Col spacingBottom="sm">
-        <Text strong={true}>Acessibilidade:</Text>
-        <Text>Componentes Web feitos pensando na acessibilidade das aplicações.</Text>
-      </Col>
-      <Col spacingBottom="sm">
-        <Text strong={true}>Modularização:</Text>
-        <Text>Permite ao desenvolvedor importar apenas os componentes que vai de fato usar.</Text>
-      </Col>
-    </Grid>
+    <Text>
+      Quartzo is a Javascript Framework that provides normalised React and React-native components, wich means that every component here can be reused on both web and native applications.
+      All of them follows the concepts of Atomic Design, a methodology that can offer a good Design System hierarchy for the page that will use them.
+
+      The major principles of Quartzo includes the reuse of code, once it's written just one time, the performance of the applications, the visual patterns that a design system can offer, and the accessibility of the page in the case of the web environment.
+    </Text>
   );
 };

@@ -3,7 +3,7 @@ import { ThemeProvider as SCThemeProvider } from 'styled-components';
 
 export class ThemeProvider extends Component {
   render() {
-    const { children } = this.props;
+    const { children, theme } = this.props;
 
     return <SCThemeProvider theme={theme}>{children}</SCThemeProvider>;
   }
