@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 
 describe('Text', () => {
   const rendered = mount(
-    <ThemeProvider theme={{ brand: 'acom' }}>
+    <ThemeProvider theme={{ name: 'light' }}>
       <Text>Text Component</Text>
     </ThemeProvider>
   );

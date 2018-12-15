@@ -1,4 +1,3 @@
-import themeUI from 'styled-theming';
 import { css } from 'styled-components';
 import { platform, medias } from '../../helpers';
 import { fontFamily } from '../../assets/styles';

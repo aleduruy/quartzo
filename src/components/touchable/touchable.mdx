@@ -7,23 +7,21 @@ import { Playground, PropsTable } from 'docz';
 import { View, Touchable, Text } from '..';
 
 # Touchable
-O **Touchable** deve ser usado para envolver componentes que possuam uma ação ao toque, como Views, imagens, Badges e outros componentes.
+The **Touchable** component must be used to wrap any existing content that will trigger an action when it is touched. 
 
-## Default
-<Touchable ripple={false} onPress={() => alert('Ação ao clicar!')} style={{ border: '1px solid #eee', padding: '10px' }}>
-  <Text>Clique aqui para ver o touchable</Text>
+### Example
+<Touchable onPress={() => alert('I was clicked!')} style={{ border: '1px solid #eee', padding: '10px' }}>
+  <Text>Click here to see the Touchable in action.</Text>
 </Touchable>
 
-## Playground
+### Playground
 <Playground>
-  <Touchable ripple={false} onPress={() => alert('Ação ao clicar!')}>
-    <View>
+  <Touchable onPress={() => alert('I was clicked!')}>
       <Text>
-        Exemplo de Touchable.
+        Click here to see the Touchable in action.
       </Text>
-    </View>
   </Touchable>
 </Playground>
 
-## Tabela de Props
+### Props Table
 <PropsTable of={Touchable} />

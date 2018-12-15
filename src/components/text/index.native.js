@@ -14,7 +14,3 @@ class TextStyled extends Component {
 const TextUI = styled(RNText)`${style}`;
 
 export const Text = withTheme(TextStyled);
-
-TextStyled.defaultProps = {
-  color: 'default',
-};
