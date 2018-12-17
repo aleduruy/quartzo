@@ -1,0 +1,39 @@
+{
+  "white": "#fff",
+  "black": "#000",
+  "primary": {
+    "light": "#ff59ad",
+    "dark": "#00adef"
+  },
+  "secondary": {
+    "light": "#917dff",
+    "dark": "#ffcb05"
+  },
+  "red": {
+    "light": "#FFEBEE",
+    "medium": "#e60014",
+    "dark": "#01a630"
+  },
+  "light": {
+    "light": "#DCEDC9",
+    "medium": "#40cd28",
+    "dark": "#01a630"
+  },
+  "yellow": {
+    "light": "#fbeec1",
+    "medium": "#F2C832",
+    "dark": "#01a630"
+  },
+  "blue": {
+    "light": "#e1f5fe",
+    "medium": "#24cbff",
+    "dark": "#01a630"
+  },
+  "grey": {
+    "lighter": "#f1f1f1",
+    "light": "#ccc",
+    "medium": "#999",
+    "dark": "#666",
+    "darker": "#333"
+  }
+}

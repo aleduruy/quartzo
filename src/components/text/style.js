@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import { platform, medias } from '../../helpers';
-import { fontFamily } from '../../assets/styles';
+import { fontFamily } from '../../assets/styles/font-family';
 
 export default css`
   margin: 0;
@@ -18,6 +18,6 @@ export default css`
     text-decoration: underline;
   `}
   ${platform === 'web' && css`
-    font-family: ${props => fontFamily[props.theme.name]};
+    font-family: ${fontFamily};
   `}
 `;

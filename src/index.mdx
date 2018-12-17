@@ -12,17 +12,9 @@ All of them follows the concepts of [Atomic Design](http://bradfrost.com/blog/po
 
 The major principles of Quartzo includes the reuse of code, once it's written just one time, the performance of the applications, the visual patterns that a design system can offer, and the accessibility of the page in the case of the web environment.
 
-## Installation
-
-Caso queira rodar os testes utilize:
-
-```
-yarn test
-```
-
 ## Entry Point
 
-Toda aplicação que usar o Cross Theme precisa ter uma tag `ThemeProvider` em volta de todo conteúdo, que será responsável por passar a brand e a version que será utilizada.
+Every project that uses Quartzo need a `ThemeProvider` component wrapping every content. It will provide the theme that will be used.
 
 ``` javascript
 import React, { Component } from 'react';
@@ -41,42 +33,20 @@ class Example extends Component {
 }
 ```
 
-## Running on web
-
-Primeiro veja se possui as dependências necessárias ao Cross-Theme:
-- Yarn
-- Node 8+
-- Xcode e Android Studio para desenvolver em native [(Como configurar)](https://facebook.github.io/react-native/docs/getting-started.html).
-
-Logo após clonar [o projeto do GitLab](http://gitlab.b2w/team/b2c-product-page/cross-theme), instale as dependências:
+## Running Documentation
 
 ```
-yarn
+yarn docz
 ```
 
-Para rodar a documentação local utilize:
-
-```
-yarn docz:dev
-```
-
-Para visualizar no native:
+## Running on native
 
 ```
 yarn dev:native
 ```
 
-## Running on native
-
-Caso queira rodar os testes utilize:
-
-```
-yarn test
-```
-
 ## Running tests
 
-Caso queira rodar os testes utilize:
 
 ```
 yarn test

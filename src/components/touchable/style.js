@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import { platform } from '../../helpers';
-import { color } from '../../assets/styles';
+import { color } from '../../assets/styles/color';
 
 export default css`
   text-decoration: none;
@@ -19,7 +19,7 @@ export default css`
       top: 0;
       left: 0;
       pointer-events: none;
-      background-image: ${props => `radial-gradient(circle, ${color.warning.medium[props.theme.brand]} 10%, transparent 10.01%)`};
+      background-image: ${props => `radial-gradient(circle, ${color.yellow.medium[props.theme.brand]} 10%, transparent 10.01%)`};
       background-repeat: no-repeat;
       background-position: 50%;
       transform: scale(0, 0);

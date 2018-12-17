@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ThemeProvider as ThemeProviderComponent, injectGlobal } from 'styled-components';
-import { fontFamilyUrl } from '../../assets/styles/';
+import { fontFamilyUrl } from '../../assets/styles/font-family';
 import { View } from '../view';
 
 export class ThemeProvider extends Component {
