@@ -1,0 +1,29 @@
+---
+name: Button
+menu: Molecules
+route: /component-button
+---
+import { Playground, PropsTable } from 'docz';
+import { ButtonStyled, Text, View } from '..';
+
+# Button
+The **Text** component must be used to wrap any existing Text on the Layout. On the web environment it can render a couple of different HTML tags, wich will keep the page semantics.
+
+### Examples
+
+
+### Semantics
+Possible tags to be used:
+- `label`
+- `strong`
+- `address`
+- `time`
+- `span`
+
+### Playground
+<Playground>
+  <Text weigth={400}>Text Example</Text>
+</Playground>
+
+### Props Table
+<PropsTable of={ButtonStyled} />
